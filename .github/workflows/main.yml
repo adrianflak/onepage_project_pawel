@@ -16,3 +16,4 @@ jobs:
         server: s31.mydevil.net
         username: ${{secrets.username_ftp}}
         password: ${{secrets.password_ftp}}
+        server-dir: public_html/pawel_skiba/
