@@ -17,4 +17,4 @@ jobs:
         server: s31.mydevil.net
         username: ${{secrets.ftp_username}}
         password: ${{secrets.ftp_password}}
-        server-dir: public_html/adrian_flak
+        server-dir: public_html/adrian_flak/
