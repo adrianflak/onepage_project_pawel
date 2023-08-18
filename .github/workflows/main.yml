@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: s31.mydevil.net
-        username: ${{secrets.username_ftp}}
-        password: ${{secrets.password_ftp}}
+        username: ${{secrets.ftp_username}}
+        password: ${{secrets.ftp_password}}
         server-dir: public_html/adrian_flak
