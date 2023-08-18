@@ -60,6 +60,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 1px 0px rgba(66, 68, 90, 1);
 }
 .main-menu-item a {
     // color: #000;
@@ -79,39 +82,44 @@ body {
 .logo-link {
     width: 82px; 
 }
-.main-menu-item {
-    padding: 0 20px;
+.main-menu-item a {
+    padding: 25px;
 }
 .social-menu .fa-brands {
     padding: 0 10px;
 }
 .container-dropdown {
-  visibility: hidden;
-  transform: scale(1, 0);
-  transform-origin: 0 0;
-  transition: all 0.3s ease-in-out;
-  position: absolute;
-  width: 1140px;
-  left: 0;
-  min-height: 250px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 70px;
+    visibility: hidden;
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    width: 1140px;
+    left: 0;
+    min-height: 250px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 70px;
 }
 .main-menu-item a:hover ~ .container-dropdown {
-  visibility: visible;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
+    visibility: visible;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
 }
+// .main-menu-item a:hover + .container-dropdown:hover ~ .container-dropdown{
+//     visibility: visible;
+// }
 .dropdown-menu {
-  width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  list-style-type: none;
-  background-color: #fff;
-  cursor: pointer;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    list-style-type: none;
+    background-color: #fff;
+    cursor: pointer;
 }
+
+
 
 
 
