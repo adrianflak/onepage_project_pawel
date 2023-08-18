@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="home">
     <div class="container">
@@ -46,14 +46,32 @@
             </header>
         </div>
         <main class="content">
-            <div class="section aboutus flex-row" id="aboutus">
-                <div class="prawa_strona" data-aos="fade-right">
-                    <h1>Lets take your Business to Next Level</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus.</p>
-                <button>Learn more</button> </div>
-                <div class="coffee" data-aos="fade-left"></div>
+            <div class="section aboutus" id="aboutus">
+                O nas
+            <div data-aos="fade-left" class="coffee"></div>
             </div>
-            <div class="section offer" id="offer">Oferta</div>
+            <div class="section work">
+                <span>Quisque tellus risus, adipisci</span>
+                <h2>Our Work Process</h2>
+                <div class="circle-wrapper flex-row">
+                    <div class="circle1 flex-column">1</div>
+                    <h4>Tytuł 1</h4>
+                    <p>tekst</p>
+                    <div class="circle2 flex-column">2</div>
+                    <h4>Tytuł 2</h4>
+                    <p>tekst</p>
+                    <div class="circle3 flex-column">3</div>
+                    <h4>Tytuł 3</h4>
+                    <p>tekst</p>
+                    <div class="circle4 flex-column">4</div>
+                    <h4>Tytuł 4</h4>
+                    <p>tekst</p>
+                    <div class="circle5 flex-column">5</div>
+                    <h4>Tytuł 5</h4>
+                    <p>tekst</p>
+                </div>
+            </div>
+            <div class="section offer" id="offer"></div>
             <div class="section blog" id="blog">Blog</div>
             <div class="section contact" id="contact">Kontakt</div>
         </main>
@@ -85,7 +103,35 @@
     <script src="script.js"></script> -->
 
 
-<script src="node_modules/aos/dist/aos.js"></script>
-<script>AOS.init()</script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
 </body>
 </html>

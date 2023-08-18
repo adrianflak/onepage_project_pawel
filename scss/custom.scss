@@ -118,12 +118,18 @@ body {
     background-color: #fff;
     cursor: pointer;
 }
-.prawa_strona {
-    max-width: 500px;
-} 
-.aboutus {
-    justify-content: center;
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5 {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1px solid #000;
     align-items: center;
+    justify-content: center;
+    font-size: 26px;
 }
 
 
