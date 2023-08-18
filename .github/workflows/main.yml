@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - ourworkprocess
+  workflow_dispatch:
 jobs:
   web-deploy:
     name: Deploy
