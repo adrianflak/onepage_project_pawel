@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - ourworkprocess
 jobs:
   web-deploy:
     name: Deploy
